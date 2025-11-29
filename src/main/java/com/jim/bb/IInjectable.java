@@ -1,16 +1,20 @@
 package com.jim.bb;
 
-import java.lang.reflect.Method;
-
 /**
  * Interface for injectable classes
  */
 public interface IInjectable {
 
     /**
-     * This is the injected method
+     * This is the injected method for method entry
      * @param name name of class and method that this is being injected into
      */
     void injectOnEntry(String name);
+
+    /**
+     * This is the injected method for method exit
+     * @param name name of class and method that this is being injected into
+     */
+    void injectOnExit(String name);
 
 }

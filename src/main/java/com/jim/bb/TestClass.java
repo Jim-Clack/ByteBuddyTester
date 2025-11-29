@@ -6,7 +6,7 @@ package com.jim.bb;
 @InjectIntoMyMethods
 public class TestClass {
 
-    public String getString() {
-        return "TestClass.getString() Called";
+    public void showString() {
+        System.out.println("TestClass.getString() Called");
     }
 }
