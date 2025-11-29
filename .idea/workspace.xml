@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ByteBuddyTester:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d683378f-66e4-4ca3-8fb7-fded4c2c4883" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/AdviceClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/AdviceClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/IInjectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/IInjectable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectIntoMyMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectIntoMyMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectMe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectMe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectionAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectionAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/TestClass.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="AnnotationType" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Jim-Clack"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Jim-Clack/ByteBuddyTester.git",
+    "accountId": "ca7e9aa5-f7c2-4e41-ad4c-49273b01a703"
+  }
+}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="false" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="35kiyJRs7ItAShEDzKIUnTzPUke" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "JAR Application.JarApp.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/jimcl/IdeaProjects/ByteBuddyTester/src/main/java/com/jim/bb/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.1544477",
+    "project.structure.side.proportion": "0.2997685",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="JarApp" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/ByteBuddyTester_jar/ByteBuddyTester.jar" />
+      <option name="VM_PARAMETERS" value="-javaagent:./out/artifacts/ByteBuddyTester_jar/ByteBuddyTester.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\jimcl\IdeaProjects\ByteBuddyTester" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d683378f-66e4-4ca3-8fb7-fded4c2c4883" name="Changes" comment="" />
+      <created>1763660723871</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763660723871</updated>
+      <workItem from="1763660724839" duration="852000" />
+      <workItem from="1764425951122" duration="516000" />
+      <workItem from="1764430275131" duration="1992000" />
+      <workItem from="1764432321698" duration="349000" />
+      <workItem from="1764432691135" duration="3821000" />
+      <workItem from="1764436544154" duration="122000" />
+      <workItem from="1764436677762" duration="319000" />
+      <workItem from="1764437011736" duration="197000" />
+      <workItem from="1764437211790" duration="91000" />
+      <workItem from="1764437318694" duration="115000" />
+      <workItem from="1764437449746" duration="8379000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
