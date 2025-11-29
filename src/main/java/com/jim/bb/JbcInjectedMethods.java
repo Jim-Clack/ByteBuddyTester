@@ -11,7 +11,7 @@ public class JbcInjectedMethods implements IInjectable {
      */
     @Override
     public void injectOnEnter(String name) {
-        System.out.println("Injection Handled On Entry " + name + " !!!");
+        System.out.println(">>> Injection Handled On Entry " + name + " !!!");
     }
 
     /**
@@ -20,7 +20,7 @@ public class JbcInjectedMethods implements IInjectable {
      */
     @Override
     public void injectOnExit(String name) {
-        System.out.println("Injection Handled On Exit " + name + " !!!");
+        System.out.println(">>> Injection Handled On Exit " + name + " !!!");
     }
 
 }

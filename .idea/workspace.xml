@@ -9,16 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d683378f-66e4-4ca3-8fb7-fded4c2c4883" name="Changes" comment="Added workspace.xml">
+    <list default="true" id="d683378f-66e4-4ca3-8fb7-fded4c2c4883" name="Changes" comment="Cleanup, comments, etc.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/AdviceClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/JbcAdviceClasses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/IInjectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/IInjectable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectIntoMyMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectMyMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectMe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/JbcInjectedMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectionAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/PremainAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/TestClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/JbcInjectedMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/JbcInjectedMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,18 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Jim-Clack"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Jim-Clack&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Jim-Clack/ByteBuddyTester.git",
-    "accountId": "ca7e9aa5-f7c2-4e41-ad4c-49273b01a703"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Jim-Clack/ByteBuddyTester.git&quot;,
+    &quot;accountId&quot;: &quot;ca7e9aa5-f7c2-4e41-ad4c-49273b01a703&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -72,8 +67,9 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
@@ -123,7 +119,8 @@
       <workItem from="1764437011736" duration="197000" />
       <workItem from="1764437211790" duration="91000" />
       <workItem from="1764437318694" duration="115000" />
-      <workItem from="1764437449746" duration="9445000" />
+      <workItem from="1764437449746" duration="10395000" />
+      <workItem from="1764449802614" duration="278000" />
     </task>
     <task id="LOCAL-00001" summary="Cleanup, added method exit injection, comments">
       <option name="closed" value="true" />
@@ -141,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764446854658</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Cleanup, comments, etc.">
+      <option name="closed" value="true" />
+      <created>1764447845826</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764447845826</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +155,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Cleanup, added method exit injection, comments" />
     <MESSAGE value="Added workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added workspace.xml" />
+    <MESSAGE value="Cleanup, comments, etc." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup, comments, etc." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
