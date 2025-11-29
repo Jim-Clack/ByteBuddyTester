@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ByteBuddyTester:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ByteBuddyTester_jar</output-path>
+    <root id="archive" name="ByteBuddyTester.jar">
+      <element id="module-output" name="ByteBuddyTester" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.18.2/byte-buddy-1.18.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
