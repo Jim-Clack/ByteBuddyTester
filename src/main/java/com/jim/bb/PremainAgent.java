@@ -9,17 +9,24 @@ import java.lang.instrument.Instrumentation;
 /**
  * Class with premain() agent to inject an Advice class into methods.
  */
-public class InjectionAgent {
+public class PremainAgent {
 
     /** [CONFIGURATION: Classes that will perform the injection] */
-    private static final Class<?> classToDoEntryInjection = AdviceClasses.EnterAdvice.class;
-    private static final Class<?> classToDoExitInjection = AdviceClasses.ExitAdvice.class;
+    private static final Class<?> classToDoEnterInjection = JbcAdviceClasses.EnterAdvice.class;
 
+    /** [CONFIGURATION: Classes that will perform the injection] */
+    private static final Class<?> classToDoExitInjection = JbcAdviceClasses.ExitAdvice.class;
+
+    /**
+     * Called before main() when so-directed by the MANIFEST - triggers instrumentation.
+     * @param agentArgs not used here.
+     * @param inst the instrumentation object we use to perform the transforms
+     */
     public static void premain(String agentArgs, Instrumentation inst) {
         new AgentBuilder.Default()
-                .type(ElementMatchers.hasAnnotation(ElementMatchers.annotationType(InjectIntoMyMethods.class)))
+                .type(ElementMatchers.hasAnnotation(ElementMatchers.annotationType(InjectMyMethods.class)))
                 .transform((builder, typeDescription, classLoader, module, protectionDomain) ->
-                        builder.visit(Advice.to(classToDoEntryInjection).on(ElementMatchers.any()))
+                        builder.visit(Advice.to(classToDoEnterInjection).on(ElementMatchers.any()))
                 )
                 .transform((builder, typeDescription, classLoader, module, protectionDomain) ->
                         builder.visit(Advice.to(classToDoExitInjection).on(ElementMatchers.any()))

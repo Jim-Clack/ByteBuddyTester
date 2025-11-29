@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Main-Class: com.jim.bb.MainApp
-Premain-Class: com.jim.bb.InjectionAgent
+Main-Class: com.jim.bb.App
+Premain-Class: com.jim.bb.PremainAgent
 Can-Redefine-Classes: true
 

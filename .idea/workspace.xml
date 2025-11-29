@@ -9,26 +9,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d683378f-66e4-4ca3-8fb7-fded4c2c4883" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/AdviceClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/AdviceClasses.java" afterDir="false" />
+    <list default="true" id="d683378f-66e4-4ca3-8fb7-fded4c2c4883" name="Changes" comment="Added workspace.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/AdviceClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/JbcAdviceClasses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/IInjectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/IInjectable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectIntoMyMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectIntoMyMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectMe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectMe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectionAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectionAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectIntoMyMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectMyMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectMe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/JbcInjectedMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/InjectionAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/PremainAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/TestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -120,12 +123,34 @@
       <workItem from="1764437011736" duration="197000" />
       <workItem from="1764437211790" duration="91000" />
       <workItem from="1764437318694" duration="115000" />
-      <workItem from="1764437449746" duration="8379000" />
+      <workItem from="1764437449746" duration="9445000" />
     </task>
+    <task id="LOCAL-00001" summary="Cleanup, added method exit injection, comments">
+      <option name="closed" value="true" />
+      <created>1764446794491</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764446794492</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added workspace.xml">
+      <option name="closed" value="true" />
+      <created>1764446854658</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764446854658</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cleanup, added method exit injection, comments" />
+    <MESSAGE value="Added workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added workspace.xml" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

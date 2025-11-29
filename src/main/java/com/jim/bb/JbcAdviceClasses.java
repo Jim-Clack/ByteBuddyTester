@@ -5,11 +5,11 @@ import net.bytebuddy.asm.Advice;
 import java.lang.reflect.Method;
 
 /**
- * Classes that perform the injection are nested in this class.
+ * Static classes that perform the injection are nested in this class.
  */
-public class AdviceClasses {
+public class JbcAdviceClasses {
 
-    public static IInjectable injectMe = new InjectMe();
+    public static IInjectable injectMe = new JbcInjectedMethods();
 
     /**
      * This handles the injection on entry to a method.
@@ -25,7 +25,7 @@ public class AdviceClasses {
             } else {
                 //System.out.println("[BBTester Trace Method Entry] Injecting: " + info);
                 try {
-                    Method method = injectMe.getClass().getMethod("injectOnEntry", String.class);
+                    Method method = injectMe.getClass().getMethod("injectOnEnter", String.class);
                     // Class<?>[] parameterTypes = method.getParameterTypes();
                     method.invoke(injectMe, info);
                 } catch (Exception e) {

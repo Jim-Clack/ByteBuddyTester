@@ -6,10 +6,10 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Annotation telling it to inject into methods.
+ * Annotation telling it to inject into methods of this class.
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface InjectIntoMyMethods {
+public @interface InjectMyMethods {
     //
 }
