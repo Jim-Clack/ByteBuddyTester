@@ -12,10 +12,10 @@ import java.lang.instrument.Instrumentation;
 public class PremainAgent {
 
     /** [CONFIGURATION: Classes that will perform the injection] */
-    private static final Class<?> classToDoEnterInjection = JbcAdviceClasses.EnterAdvice.class;
+    private static final Class<?> classToDoEnterInjection = XampleAdviceClasses.EnterAdvice.class;
 
     /** [CONFIGURATION: Classes that will perform the injection] */
-    private static final Class<?> classToDoExitInjection = JbcAdviceClasses.ExitAdvice.class;
+    private static final Class<?> classToDoExitInjection = XampleAdviceClasses.ExitAdvice.class;
 
     /**
      * Called before main() when so-directed by the MANIFEST - triggers instrumentation.

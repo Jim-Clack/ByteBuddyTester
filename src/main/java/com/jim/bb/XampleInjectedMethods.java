@@ -3,7 +3,7 @@ package com.jim.bb;
 /**
  * Class to be injected
  */
-public class JbcInjectedMethods implements IInjectable {
+public class XampleInjectedMethods implements IInjectable {
 
     /**
      * This is the injected method for method entry
@@ -11,7 +11,7 @@ public class JbcInjectedMethods implements IInjectable {
      */
     @Override
     public void injectOnEnter(String name) {
-        System.out.println(">>> Injection Handled On Entry " + name + " !!!");
+        System.out.println(">>> Injection Handled On Enter " + name + " !!!");
     }
 
     /**

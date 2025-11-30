@@ -9,7 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d683378f-66e4-4ca3-8fb7-fded4c2c4883" name="Changes" comment="Cleanup, comments, etc." />
+    <list default="true" id="d683378f-66e4-4ca3-8fb7-fded4c2c4883" name="Changes" comment="Cleanup, comments, etc.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/JbcAdviceClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/XampleAdviceClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/JbcInjectedMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/XampleInjectedMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/PremainAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/PremainAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/AppTestClass.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +122,7 @@
       <workItem from="1764437211790" duration="91000" />
       <workItem from="1764437318694" duration="115000" />
       <workItem from="1764437449746" duration="10395000" />
-      <workItem from="1764449802614" duration="917000" />
+      <workItem from="1764449802614" duration="2238000" />
     </task>
     <task id="LOCAL-00001" summary="Cleanup, added method exit injection, comments">
       <option name="closed" value="true" />
@@ -149,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764450111952</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Cleanup, comments, etc.">
+      <option name="closed" value="true" />
+      <created>1764450736716</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764450736716</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

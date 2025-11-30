@@ -7,12 +7,12 @@ import java.lang.reflect.Method;
 /**
  * Static classes that perform the injection are nested in this class.
  */
-public class JbcAdviceClasses {
+public class XampleAdviceClasses {
 
-    public static IInjectable injectMe = new JbcInjectedMethods();
+    public static IInjectable injectMe = new XampleInjectedMethods();
 
     /**
-     * This handles the injection on entry to a method.
+     * This handles the injection on entering a method.
      */
     public static class EnterAdvice {
         @Advice.OnMethodEnter
@@ -20,8 +20,8 @@ public class JbcAdviceClasses {
             if (injectMe == null) {
                 return;
             }
-            if (info.contains(".<")) {
-                //System.out.println("[BBTester Trace Method Entry] Skipping: " + info);
+            if (info.endsWith(">()")) {
+                //System.out.println("[BBTester Trace Method Entry] Ignoring: " + info);
             } else {
                 //System.out.println("[BBTester Trace Method Entry] Injecting: " + info);
                 try {
@@ -29,7 +29,7 @@ public class JbcAdviceClasses {
                     // Class<?>[] parameterTypes = method.getParameterTypes();
                     method.invoke(injectMe, info);
                 } catch (Exception e) {
-                    System.err.println("[BBTester Trace Method Entry] Error calling: " + e.getMessage());
+                    System.err.println("[BBTester Trace Method Entry] Error " + info + ": " + e.getMessage());
                 }
             }
         }
@@ -44,7 +44,7 @@ public class JbcAdviceClasses {
             if (injectMe == null) {
                 return;
             }
-            if (info.contains(".<")) {
+            if (info.endsWith(">()")) {
                 //System.out.println("[BBTester Trace Method Exit] Skipping: " + info);
             } else {
                 //System.out.println("[BBTester Trace Method Exit] Injecting: " + info);
