@@ -3,7 +3,8 @@ package com.jim.bb;
 /**
  * This is the class we mess around with - injecting into its methods
  */
-@InjectMyMethods
+@XampleAnnoOnEnter
+@XampleAnnoOnExit
 public class AppTestClass {
 
     public void showString() {

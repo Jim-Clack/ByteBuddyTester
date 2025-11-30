@@ -7,22 +7,18 @@ import java.lang.reflect.Method;
 /**
  * Static classes that perform the injection are nested in this class.
  */
-public class XampleAdviceClasses {
+public class XampleStaticClasses {
 
-    public static IInjectable injectMe = new XampleInjectedMethods();
+    /** This class contains the methods to be injected. */
+    public static XampleInjectedMethods injectMe = new XampleInjectedMethods();
 
     /**
-     * This handles the injection on entering a method.
+     * This advice class handles the injection on entering a method.
      */
     public static class EnterAdvice {
         @Advice.OnMethodEnter
         public static void onMethodEnter(@Advice.Origin("#t.#m()") String info) {
-            if (injectMe == null) {
-                return;
-            }
-            if (info.endsWith(">()")) {
-                //System.out.println("[BBTester Trace Method Entry] Ignoring: " + info);
-            } else {
+            if (!info.endsWith(">()")) {
                 //System.out.println("[BBTester Trace Method Entry] Injecting: " + info);
                 try {
                     Method method = injectMe.getClass().getMethod("injectOnEnter", String.class);
@@ -36,17 +32,12 @@ public class XampleAdviceClasses {
     }
 
     /**
-     * This handles the injection on exit from a method.
+     * This advice class handles the injection on exit from a method.
      */
     public static class ExitAdvice {
         @Advice.OnMethodExit
         public static void onMethodEnter(@Advice.Origin("#t.#m()") String info) {
-            if (injectMe == null) {
-                return;
-            }
-            if (info.endsWith(">()")) {
-                //System.out.println("[BBTester Trace Method Exit] Skipping: " + info);
-            } else {
+            if (!info.endsWith(">()")) {
                 //System.out.println("[BBTester Trace Method Exit] Injecting: " + info);
                 try {
                     Method method = injectMe.getClass().getMethod("injectOnExit", String.class);
