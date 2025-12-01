@@ -14,11 +14,8 @@ import java.util.Map;
  */
 public class PremainAgent {
 
-    /** WIring for injection, key=annotation, value=static class with advice. */
-    private static final Map<Class<?>, Class<?>> wiring = new HashMap<>();
-
-    /** Used only to check keys to ensure they are Annotations. */
-    private static final Class<? extends Annotation> AnnotationBase = Annotation.class;
+    /** Wiring for class injection, key=annotation, value=static class with advice. */
+    private static final Map<Class<?>, Class<?>> classWiring = new HashMap<>();
 
     /**
      * Called before main() when so-directed by the MANIFEST - triggers instrumentation.
@@ -27,20 +24,19 @@ public class PremainAgent {
      */
     @SuppressWarnings("unchecked")
     public static void premain(String agentArgs, Instrumentation inst) {
-        new XampleConfiguration().getWiring(wiring);
+        new XampleConfiguration().getClassWiring(classWiring);
         // find classes with specified annotations and wire them
-        for(Class<?> key : wiring.keySet()) {
-            if (!AnnotationBase.isAssignableFrom(key)) {
-                continue;
+        for(Class<?> key : classWiring.keySet()) {
+            if(key != null && Annotation.class.isAssignableFrom(key)) {
+                new AgentBuilder.Default()
+                        .type(ElementMatchers.hasAnnotation(
+                                ElementMatchers.annotationType((Class<? extends Annotation>) key)))
+                        .transform((builder, typeDescription, classLoader, module, protectionDomain) ->
+                                builder.visit(Advice.to(classWiring.get(key)).on(ElementMatchers.any()))
+                        )
+                        //          .with(AgentBuilder.Listener.StreamWriting.toSystemOut())
+                        .installOn(inst);
             }
-            new AgentBuilder.Default()
-                    .type(ElementMatchers.hasAnnotation(
-                            ElementMatchers.annotationType((Class<? extends Annotation>) key)))
-                    .transform((builder, typeDescription, classLoader, module, protectionDomain) ->
-                            builder.visit(Advice.to(wiring.get(key)).on(ElementMatchers.any()))
-                    )
-                    //          .with(AgentBuilder.Listener.StreamWriting.toSystemOut())
-                    .installOn(inst);
         }
     }
 

@@ -20,13 +20,7 @@ public class XampleStaticAdvices {
         @Advice.OnMethodEnter
         public static void onMethodEnter(@Advice.Origin("#t.#m()") String info) {
             if (!info.endsWith(">()")) {
-                try {
-                    Method method = injectMe.getClass().getMethod("injectOnEnter", String.class);
-                    // Class<?>[] parameterTypes = method.getParameterTypes();
-                    method.invoke(injectMe, info);
-                } catch (Exception e) {
-                    System.err.println("[BBTester Trace Method Entry] Error " + info + ": " + e.getMessage());
-                }
+                injectMe.injectOnEnter(info);
             }
         }
     }
@@ -39,15 +33,22 @@ public class XampleStaticAdvices {
         @Advice.OnMethodExit
         public static void onMethodEnter(@Advice.Origin("#t.#m()") String info) {
             if (!info.endsWith(">()")) {
-                try {
-                    Method method = injectMe.getClass().getMethod("injectOnExit", String.class);
-                    // Class<?>[] parameterTypes = method.getParameterTypes();
-                    method.invoke(injectMe, info);
-                } catch (Exception e) {
-                    System.err.println("[BBTester Trace Method Exit] Error calling: " + e.getMessage());
-                }
+                injectMe.injectOnExit(info);
             }
         }
     }
+
+    // Note that instead of calling injectMe.injectOnEnter(info); above, you could use
+    // reflection, which would be handy if you were injecting code that was third-party
+    // and you had no sources to it. Just replace that line with:
+    /*
+    try {
+        Method method = injectMe.getClass().getMethod("injectOnEnter", String.class);
+        Class<?>[] parameterTypes = method.getParameterTypes();
+        method.invoke(injectMe, info);
+    } catch (Exception e) {
+        System.err.println("[BBTester Trace Method Enter] Error calling: " + e.getMessage());
+    }
+    */
 
 }
