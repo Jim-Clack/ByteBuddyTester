@@ -30,19 +30,17 @@ public class PremainAgent {
         new XampleConfiguration().getWiring(wiring);
         // find classes with specified annotations and wire them
         for(Class<?> key : wiring.keySet()) {
-            if(!AnnotationBase.isAssignableFrom(key)) {
+            if (!AnnotationBase.isAssignableFrom(key)) {
                 continue;
             }
-            if(key.isAnnotation()) {
-                new AgentBuilder.Default()
-                        .type(ElementMatchers.hasAnnotation(
-                                ElementMatchers.annotationType((Class<? extends Annotation>) key)))
-                        .transform((builder, typeDescription, classLoader, module, protectionDomain) ->
-                                builder.visit(Advice.to(wiring.get(key)).on(ElementMatchers.any()))
-                        )
-                        //          .with(AgentBuilder.Listener.StreamWriting.toSystemOut())
-                        .installOn(inst);
-            }
+            new AgentBuilder.Default()
+                    .type(ElementMatchers.hasAnnotation(
+                            ElementMatchers.annotationType((Class<? extends Annotation>) key)))
+                    .transform((builder, typeDescription, classLoader, module, protectionDomain) ->
+                            builder.visit(Advice.to(wiring.get(key)).on(ElementMatchers.any()))
+                    )
+                    //          .with(AgentBuilder.Listener.StreamWriting.toSystemOut())
+                    .installOn(inst);
         }
     }
 

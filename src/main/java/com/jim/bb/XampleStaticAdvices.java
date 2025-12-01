@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
 /**
  * Static classes that perform the injection are nested in this class.
  */
-public class XampleStaticClasses {
+public class XampleStaticAdvices {
 
     /** This class contains the methods to be injected. */
     public static XampleInjectedMethods injectMe = new XampleInjectedMethods();
@@ -16,10 +16,10 @@ public class XampleStaticClasses {
      * This advice class handles the injection on entering a method.
      */
     public static class EnterAdvice {
+        @SuppressWarnings("unused")
         @Advice.OnMethodEnter
         public static void onMethodEnter(@Advice.Origin("#t.#m()") String info) {
             if (!info.endsWith(">()")) {
-                //System.out.println("[BBTester Trace Method Entry] Injecting: " + info);
                 try {
                     Method method = injectMe.getClass().getMethod("injectOnEnter", String.class);
                     // Class<?>[] parameterTypes = method.getParameterTypes();
@@ -35,10 +35,10 @@ public class XampleStaticClasses {
      * This advice class handles the injection on exit from a method.
      */
     public static class ExitAdvice {
+        @SuppressWarnings("unused")
         @Advice.OnMethodExit
         public static void onMethodEnter(@Advice.Origin("#t.#m()") String info) {
             if (!info.endsWith(">()")) {
-                //System.out.println("[BBTester Trace Method Exit] Injecting: " + info);
                 try {
                     Method method = injectMe.getClass().getMethod("injectOnExit", String.class);
                     // Class<?>[] parameterTypes = method.getParameterTypes();

@@ -13,7 +13,7 @@ public class XampleConfiguration {
      */
     public void getWiring(Map<Class<?>, Class<?>> wiring) {
         // TODO: Read these from a configuration file
-        wiring.put(XampleAnnoOnEnter.class, XampleStaticClasses.EnterAdvice.class);
-        wiring.put(XampleAnnoOnExit.class, XampleStaticClasses.ExitAdvice.class);
+        wiring.put(XampleAnnoOnEnter.class, XampleStaticAdvices.EnterAdvice.class);
+        wiring.put(XampleAnnoOnExit.class, XampleStaticAdvices.ExitAdvice.class);
     }
 }
