@@ -9,11 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d683378f-66e4-4ca3-8fb7-fded4c2c4883" name="Changes" comment="refactoring, misc cleanup.">
+    <list default="true" id="d683378f-66e4-4ca3-8fb7-fded4c2c4883" name="Changes" comment="Cleaned up XampleStaticAAdvice and related changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/PremainAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/PremainAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/XampleConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/XampleConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jim/bb/XampleStaticAdvices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jim/bb/XampleStaticAdvices.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +121,7 @@
       <workItem from="1764437211790" duration="91000" />
       <workItem from="1764437318694" duration="115000" />
       <workItem from="1764437449746" duration="10395000" />
-      <workItem from="1764449802614" duration="13806000" />
+      <workItem from="1764449802614" duration="14291000" />
     </task>
     <task id="LOCAL-00001" summary="Cleanup, added method exit injection, comments">
       <option name="closed" value="true" />
@@ -190,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764551427800</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Cleaned up XampleStaticAAdvice and related changes">
+      <option name="closed" value="true" />
+      <created>1764619408336</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1764619408336</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +207,8 @@
     <MESSAGE value="Cleanup, comments, etc." />
     <MESSAGE value="Externalized wiring configuration, refactoring, misc cleanup." />
     <MESSAGE value="refactoring, misc cleanup." />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring, misc cleanup." />
+    <MESSAGE value="Cleaned up XampleStaticAAdvice and related changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up XampleStaticAAdvice and related changes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
